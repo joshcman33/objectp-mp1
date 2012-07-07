@@ -15,5 +15,5 @@ public class Flight {
     private int flightDepartureDate;
     private int flightDepartureTime;
     private int flightMaximumCapacityOfPassengers;
-    private User[] passengerList;    
+    private Passenger[] passengerList;    
 }
