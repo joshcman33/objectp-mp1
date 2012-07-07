@@ -23,7 +23,7 @@ public class FlightBookingManagementSystem {
     System.out.ln("[3]Exit");
 
     Scanner scan = new Scanner(System.in);
-    input = scan.nextLine();
+    input = scan.nextInt();
 
 
 
