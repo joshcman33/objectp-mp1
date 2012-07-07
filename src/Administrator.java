@@ -5,10 +5,18 @@
 
 /**
  *
- * @author  John Sherlock Baldeo
- *          Joshua C. Manansala
- * 
+ * @author John Sherlock Baldeo Joshua C. Manansala
+ *
  */
 public class Administrator {
+
     private String password;
+
+    public Administrator(String password) {
+        this.password = password;
+    }
+
+    public boolean login(String password) {
+        return this.password.equals("adminuser1");
+    }
 }

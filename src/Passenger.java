@@ -21,4 +21,9 @@ public class Passenger {
         this.lastName = lastName;
         this.passportNumber = passportNumber;
     }
+    
+    public void bookFlight(String flightOrigin, String flightDestination, int flightDepartureDate,
+            int flightDepartureTime) {
+                
+    }
 }
