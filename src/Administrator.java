@@ -8,5 +8,5 @@
  * @author Joshua C. Manansala
  */
 public class Administrator {
-    
+    private String password;
 }
