@@ -5,10 +5,18 @@
 
 /**
  *
- * @author Joshua C. Manansala
+ * @author  John Sherlock Baldeo
+ *          Joshua C. Manansala
+ * 
  */
 public class FlightBookingManagementSystem {
     private Flight[] flightList;
     private int flightCount;
     private Passenger defaultPassenger;
+    
+    public FlightBookingManagementSystem(Flight[] flightList, int flightCount, Passenger defaultPassenger) {
+        this.flightList = flightList;
+        this.flightCount = flightCount;
+        this.defaultPassenger = defaultPassenger;
+    }
 }

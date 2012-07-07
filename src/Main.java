@@ -5,7 +5,9 @@
 
 /**
  *
- * @author Joshua C. Manansala
+ * @author  John Sherlock Baldeo
+ *          Joshua C. Manansala
+ * 
  */
 public class Main {
 
