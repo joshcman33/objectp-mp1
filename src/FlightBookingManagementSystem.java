@@ -23,7 +23,7 @@ public class FlightBookingManagementSystem {
         this.flightCount = flightCount;
     }
 
-    public static void chooseUser(int userChoice) {
+    /*public static void chooseUser(int userChoice) {
         String password;
         
         if (userChoice == 1) {
@@ -35,7 +35,7 @@ public class FlightBookingManagementSystem {
         else if (userChoice == 2) {
             passengerUser = new Passenger();
         }               
-    }
+    }*/
     
     public int getSize() {
         return flightCount;

@@ -21,14 +21,13 @@ public class Flight {
     
     public Flight(String flightNumber, String flightAirline, String flightOrigin,
             String flightDestination, int flightDepartureDate, int flightDepartureTime,
-            int flightMaximumCapacityOfPassengers, Passenger[] passengerList) {
+            int flightMaximumCapacityOfPassengers) {
         this.flightNumber = flightNumber;
         this.flightAirline = flightAirline;
         this.flightOrigin = flightOrigin;
         this.flightDestination = flightDestination;
         this.flightDepartureDate = flightDepartureDate;
         this.flightDepartureTime = flightDepartureTime;
-        this.flightMaximumCapacityOfPassengers = flightMaximumCapacityOfPassengers;
-        this.passengerList = passengerList;        
+        this.flightMaximumCapacityOfPassengers = flightMaximumCapacityOfPassengers;      
     }
 }

@@ -19,7 +19,7 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int userChoice;
+        /*int userChoice;
         
         System.out.println("\nWelcome to DLS Flight Booking Management System!\n");
         
@@ -31,6 +31,10 @@ public class Main {
         Scanner scan1 = new Scanner(System.in);
         userChoice = scan1.nextInt();
         
-        FlightBookingManagementSystem.chooseUser(userChoice);
+        FlightBookingManagementSystem.chooseUser(userChoice);*/
+        
+        Administrator admin1 = new Administrator("banana");
+        
+        admin1.createNewFlight("CX5401", "ePAL", "Goks", "Andrew", 071112, 1120, 1);
     }
 }

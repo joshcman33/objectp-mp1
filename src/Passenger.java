@@ -26,4 +26,8 @@ public class Passenger {
             int flightDepartureTime) {
                 
     }
+    
+    public void bookConnectingFlights() {
+        
+    }
 }
