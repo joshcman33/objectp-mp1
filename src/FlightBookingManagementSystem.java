@@ -8,8 +8,6 @@
  * @author John Sherlock Baldeo Joshua C. Manansala
  *
  */
-import java.util.Scanner;
-
 public class FlightBookingManagementSystem {
 
     private Flight[] flightList;
@@ -43,6 +41,7 @@ public class FlightBookingManagementSystem {
     }
     
     public void viewFlightList(int i) {
+        System.out.println("\nFLIGHT NUMBER\tAIRLINE\tORIGIN\tDESTINATION\tDEPARTURE DATE\tDEPARTURE TIME");
         System.out.println(flightList[i].getFlightNumber() + "\t\t" + flightList[i].getFlightAirline()
                 + "\t" + flightList[i].getFlightOrigin() + "\t" + flightList[i].getFlightDestination()
                 + "\t\t" + flightList[i].getFlightDepartureDate() + "\t\t" + flightList[i].getFlightDepartureTime());

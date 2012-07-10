@@ -8,6 +8,8 @@
  * @author John Sherlock Baldeo Joshua C. Manansala
  *
  */
+import java.util.Scanner;
+
 public class Administrator {
 
     private String password;
@@ -27,17 +29,38 @@ public class Administrator {
         flightList[flightCount] = new Flight(flightNumber, flightAirline,
                 flightOrigin, flightDestination, flightDepartureDate,
                 flightDepartureTime, flightMaximumCapacityOfPassengers);
-        
+
         return ++flightCount;
     }
 
     public void viewAllFlights(FlightBookingManagementSystem fbms) {
-        System.out.println("FLIGHT NUMBER\tAIRLINE\tORIGIN\tDESTINATION\tDEPARTURE DATE\tDEPARTURE TIME");
-        for (int i = 0; i < fbms.getSize(); i++) {
+        int i = 0;
+        char direction;
+        Scanner userInput = new Scanner(System.in);
+
+        while (i >= 0 && i < fbms.getSize()) {
             fbms.viewFlightList(i);
+
+            System.out.println("\nEnter [P]revious or [N]ext: ");
+            direction = userInput.nextLine().charAt(0);
+
+            if (fbms.getSize() > 1) {
+                if (direction == 'P' && i > 0) {
+                    i--;
+                } else if (direction == 'N' && i < fbms.getSize()-1) {
+                    i++;
+                } else {
+                    System.out.println("\nReached the end of the list. Invalid Command.\n");
+                    break;
+                }
+            } else {
+                System.out.println("\nNo other entries found.\n");
+                break;
+            }
         }
     }
 
-    public void modifyFlightEntry() {
+    public void modifyFlightEntry(FlightBookingManagementSystem fbms) {
+        
     }
 }
