@@ -25,6 +25,8 @@ public class FlightBookingManagementSystem {
     Scanner scan = new Scanner(System.in);
     input = scan.nextInt();
 
+    
+
 
 
 
