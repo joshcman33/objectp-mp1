@@ -27,14 +27,6 @@ public class FlightBookingManagementSystem {
         flightCount = 0;
     }
 
-    /*
-     * public static void chooseUser(int userChoice) { String password;
-     *
-     * if (userChoice == 1) { System.out.println("Enter administrator password:
-     * "); Scanner scan1 = new Scanner(System.in); password = scan1.nextLine();
-     * adminUser = new Administrator(password); } else if (userChoice == 2) {
-     * passengerUser = new Passenger(); } }
-     */
     public int getSize() {
         return flightCount;
     }
