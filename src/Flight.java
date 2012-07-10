@@ -5,7 +5,9 @@
 
 /**
  *
- * @author Joshua C. Manansala
+ * @author  John Sherlock Baldeo
+ *          Joshua C. Manansala
+ * 
  */
 public class Flight {
     private String flightNumber;
@@ -15,5 +17,17 @@ public class Flight {
     private int flightDepartureDate;
     private int flightDepartureTime;
     private int flightMaximumCapacityOfPassengers;
-    private Passenger[] passengerList;    
+    private Passenger[] passengerList;
+    
+    public Flight(String flightNumber, String flightAirline, String flightOrigin,
+            String flightDestination, int flightDepartureDate, int flightDepartureTime,
+            int flightMaximumCapacityOfPassengers) {
+        this.flightNumber = flightNumber;
+        this.flightAirline = flightAirline;
+        this.flightOrigin = flightOrigin;
+        this.flightDestination = flightDestination;
+        this.flightDepartureDate = flightDepartureDate;
+        this.flightDepartureTime = flightDepartureTime;
+        this.flightMaximumCapacityOfPassengers = flightMaximumCapacityOfPassengers;      
+    }
 }
