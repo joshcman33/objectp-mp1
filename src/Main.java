@@ -33,8 +33,24 @@ public class Main {
         
         FlightBookingManagementSystem.chooseUser(userChoice);*/
         
-        Administrator admin1 = new Administrator("banana");
+        int flightCount = 0;
         
-        admin1.createNewFlight("CX5401", "ePAL", "Goks", "Andrew", 071112, 1120, 1);
+        Flight[] flightList = new Flight[100];
+        
+        FlightBookingManagementSystem fbms = new FlightBookingManagementSystem();
+                
+        Administrator admin = new Administrator("banana");
+        
+        fbms.login(admin, "banana");
+        
+        flightCount = admin.createNewFlight(flightList, flightCount, "PL5401", "PAL", "Goks", "Andrew", 071112, 1120, 300);
+        
+        fbms = new FlightBookingManagementSystem(flightList, flightCount);
+        
+        flightCount = admin.createNewFlight(flightList, flightCount, "CX5401", "CP", "Andrew", "Yuchengco", 071212, 2320, 300);
+        
+        fbms = new FlightBookingManagementSystem(flightList, flightCount);
+        
+        admin.viewAllFlights(fbms);
     }
 }

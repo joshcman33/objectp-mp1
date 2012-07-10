@@ -24,7 +24,7 @@ public class Passenger {
     
     public void bookFlight(String flightOrigin, String flightDestination, int flightDepartureDate,
             int flightDepartureTime) {
-                
+        
     }
     
     public void bookConnectingFlights() {

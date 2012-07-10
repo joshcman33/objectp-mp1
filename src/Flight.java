@@ -30,4 +30,32 @@ public class Flight {
         this.flightDepartureTime = flightDepartureTime;
         this.flightMaximumCapacityOfPassengers = flightMaximumCapacityOfPassengers;      
     }
+    
+    public String getFlightNumber() {
+        return flightNumber;
+    }
+    
+    public String getFlightAirline() {
+        return flightAirline;
+    }
+    
+    public String getFlightOrigin() {
+        return flightOrigin;
+    }
+    
+    public String getFlightDestination() {
+        return flightDestination;
+    }
+    
+    public int getFlightDepartureDate() {
+        return flightDepartureDate;
+    }
+    
+    public int getFlightDepartureTime() {
+        return flightDepartureTime;
+    }
+    
+    public int getFlightMaximumCapacityOfPassengers() {
+        return flightMaximumCapacityOfPassengers;
+    }
 }
